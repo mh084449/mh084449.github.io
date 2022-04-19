@@ -30,6 +30,13 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   padding: 7rem 0;
 }
 
+.center {
+  display: block;
+  text-align: center;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
 .filters a {
   text-decoration: none;
   color: #000;
@@ -125,6 +132,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   margin-top: 0px;
   opacity: 1;
   visibility: visible;
+ 
 }
 
 .testimonial-wrap {
