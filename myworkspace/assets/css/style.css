@@ -359,7 +359,49 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 .custom-navbar .navbar-brand {
   font-size: 1.7rem;
+  position: relative;
 }
+
+.custom-navbar .navbar-brand::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.custom-navbar .navbar-brand::after{
+  content: '';
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+  bottom: 0.5rem;
+  left: 0;
+}
+
+.custom-navbar .navbar-brand::before{
+  background-color: white;
+  animation: typewriter 4s steps(12) 1s forwards;
+}
+
+.custom-navbar .navbar-brand::after{
+  width: 0.125rem;
+  background-color: black;
+  animation: typewriter 4s steps(12) 1s forwards, blink 750ms steps(12) infinite;
+}
+
+@keyframes typewriter{
+  to{
+    left: 100%;
+  }
+}
+
+@keyframes blink{
+  to{
+    background-color: transparent;
+  }
+}
+
 
 /* Burger */
 .burger {
